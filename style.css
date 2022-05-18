@@ -39,22 +39,23 @@ header {
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  padding: 1.2rem;
+  padding: 1.75rem;
   background-color: var(--accent_color);
 }
 
 header > a {
   text-decoration: none;
+  text-shadow: 0.2vh 0.2vh 0.5vh rgba(0, 0, 0, 0.75);
   font-size: 1.25rem;
   font-weight: bold;
-  font-family: Nunito;
+  font-family: Asap;
   color: var(--text_color_light);
   transition: 0.25s;
 }
 
 header > a:hover {
-  font-size: 1.5rem;
-  filter: brightness(25%);
+  font-size: 1.35rem;
+  filter: brightness(10%);
 }
 
 .banner {
@@ -63,8 +64,8 @@ header > a:hover {
   justify-content: space-evenly;
   width: 100%;
   padding: 3rem;
-  /* background-image: linear-gradient(0deg, #fcfaeb 0%, #5bca6a 100%); */
-  margin-bottom: 2rem;
+  background-image: linear-gradient(0deg, #fcfaeb 0%, var(--accent_color) 100%);
+  margin-bottom: 5rem;
 }
 
 .banner img {
@@ -74,7 +75,8 @@ header > a:hover {
 .banner h1 {
   font-size: 2rem;
   text-align: center;
-  color: var(--text_color_dark);
+  text-shadow: 0.2vh 0.2vh 0.5vh rgba(0, 0, 0, 0.85);
+  color: var(--text_color_light);
 }
 
 .section_plataforma {
@@ -96,7 +98,7 @@ header > a:hover {
 }
 
 .labeled-text h2 {
-  font-family: Nunito;
+  font-family: Asap;
   font-size: 2.75rem;
   color: var(--accent_color);
   margin-bottom: 1.25rem;
@@ -130,10 +132,20 @@ header > a:hover {
 .artigos h2,
 .aulas h2 {
   font-family: Nunito;
-  font-size: 2.75rem;
+  font-size: 3rem;
   color: var(--accent_color);
-  margin-bottom: 2rem;
   margin-top: 2rem;
+}
+
+.section_equipe p,
+.modulo p,
+.artigos p,
+.aulas p {
+  font-family: Nunito;
+  font-style: italic;
+  font-size: 1.4rem;
+  margin-bottom: 2.5rem;
+  color: var(--text_color_dark);
 }
 
 .member-row {
@@ -159,10 +171,10 @@ header > a:hover {
 }
 
 .member p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-style: italic;
   text-align: center;
-  max-inline-size: 250px;
+  max-inline-size: 200px;
   color: #2b2b2b;
 }
 
