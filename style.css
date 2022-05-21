@@ -174,7 +174,7 @@ form {
 }
 
 .member img {
-  max-width: 200px;
+  max-width: 175px;
   margin-bottom: 0.75rem;
   border-radius: 100%;
   box-shadow: 0.25vh 0.25vh 0.75vh 0.1vh rgba(0, 0, 0, 0.5);
@@ -274,17 +274,19 @@ footer > a {
 
   .banner {
     flex-direction: column-reverse;
-    padding: 2rem;
+    padding: 4rem;
     margin-bottom: 0;
   }
 
   .banner img {
     width: 80%;
     margin-bottom: 1.5rem;
+    display: none;
   }
 
   .banner h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
   }
 
   .section_plataforma {
@@ -335,6 +337,14 @@ footer > a {
   .member {
     width: 100%;
     margin-bottom: 1rem;
+  }
+
+  .member:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .member img {
+    max-width: 150px;
   }
 
   form {
